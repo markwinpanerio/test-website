@@ -1,2 +1,3 @@
-const test = 20;
-const data = false
+import $ from 'jquery';
+
+console.log($.fn);

@@ -6,7 +6,6 @@ var livereload = require('gulp-livereload');
 var connect = require('gulp-connect');
 var ejs = require("gulp-ejs");
 var log = require('fancy-log')
-var image = require('gulp-image');
 
 var outputDir = './public';
  
@@ -32,13 +31,13 @@ gulp.task('es6', function() {
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(gulp.dest(`./${public}/js`))
+    .pipe(gulp.dest(`./${outputDir}/js`))
     .pipe(connect.reload());
 })
 
 //minify css
 gulp.task('css', function () {
-  gulp.src(`./${public}/**/*.css`)
+  gulp.src(`./${outputDir}/**/*.css`)
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true
@@ -56,25 +55,16 @@ gulp.task('ejs', function() {
     .pipe(connect.reload());
 })
 
-//copy image 
-gulp.task('image', function () {
-  gulp.src('./src/images/**/*')
-    .pipe(image())
-    .pipe(gulp.dest(`./${public}/images`))
-    .pipe(connect.reload());
-});
-
-gulp.task('run', ['sass', 'css', 'es6', 'image', 'ejs']);
+gulp.task('run', ['sass', 'css', 'es6', 'ejs']);
 
 gulp.task('watch', function() {
 
   var server = livereload();
 
   gulp.watch('./src/sass/**/*.scss', ['sass']);
-  gulp.watch(`./${public}/**/*.css`, ['css']);
+  gulp.watch(`./${outputDir}/**/*.css`, ['css']);
   gulp.watch('./src/js/**/*.js', ['es6']);
   gulp.watch('./src/*.ejs', ['ejs']);
-  gulp.watch('./src/images/**/*', ['image']);
 })
 
 gulp.task('default', ['run', 'watch', 'connect']);
