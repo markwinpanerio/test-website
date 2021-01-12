@@ -1,20 +1,12 @@
-<%
-  const page = {
-    title: 'Test Website'
-  }
-%>
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= page.title %></title>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <%- include('./web-elements/modules/header', {pageTitle: 'Test Website'}) %>
 </head>
 <body>
-hi :D
+<%- include('./web-elements/layout/l-header') %>
 
-<script src="./js/main.js"></script>
+<%- include('./web-elements/layout/l-footer') %>
+<%- include('./web-elements/modules/footer') %>
 </body>
 </html>
