@@ -79,6 +79,10 @@
         h2 {
             font-size: 32px;
             line-height: 1.4;
+
+            @include max-screen($breakpoint-mobile) {
+                font-size: 20px;
+            }
         }
 
         h3 {
@@ -87,12 +91,16 @@
             letter-spacing: 0.05em;
             margin-top: 19px;
             font-weight: 700;
+
+            @include max-screen($breakpoint-mobile) {
+                font-size: 12px;
+            }
         }
     }
 
     .carousel-control-next,
     .carousel-control-prev {
-        left: 11.5%;
+        width: 11.5%;
     }
 
     .carousel-control-prev-icon,

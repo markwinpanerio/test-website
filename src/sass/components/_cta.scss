@@ -8,6 +8,10 @@
 
     .btn {
         margin-left: 49px;
+
+        @include max-screen($breakpoint-mobile) {
+            margin: 40px auto 0;
+        } 
     }
 }
 
@@ -23,10 +27,19 @@
         letter-spacing: 0.05em;
         margin-bottom: 0;
         margin-right: 30px;
+
+        @include max-screen($breakpoint-mobile) {
+            width: 100%;
+            margin-bottom: 20px;
+        } 
     }
 
     &-form {
         padding-left: 31px;
+
+        @include max-screen($breakpoint-mobile) {
+            margin-top: 30px;
+        } 
 
         .form-line {
             margin-left: 31px;
@@ -34,6 +47,14 @@
 
         .form-control {
             margin-right: 8px;
+        }
+
+        
+
+        .btn {
+            @include max-screen($breakpoint-mobile) {
+                margin: 20px auto 0;
+            } 
         }
     }
 }

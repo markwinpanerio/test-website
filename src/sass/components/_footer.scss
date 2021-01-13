@@ -1,5 +1,7 @@
 .footer {
     background-color: $color-primary-darker;
+    position: relative;
+    padding: 47px 0 90px;
 
     h2 {
         color: $color-text;
@@ -9,6 +11,10 @@
 
     &-brand {
         opacity: 0.2;
+
+        @include max-screen($breakpoint-mobile) {
+            text-align: center;
+        }
     }
 
 
@@ -19,6 +25,10 @@
     }
 
     &-contact {
+
+        @include max-screen($breakpoint-mobile) {
+            margin-top: 30px;
+        }
 
         p {
             color: $color-text;
@@ -43,6 +53,10 @@
         font-size: 14px;
         padding: 0 16px;
 
+        @include max-screen($breakpoint-mobile) {
+            margin-top: 30px;
+        }
+
         em {
             font-style: normal;
             color: $color-text;
@@ -62,8 +76,61 @@
     }
 
     &-photostream {
+
+        @include max-screen($breakpoint-mobile) {
+            margin-top: 30px;
+        }
+
         ul {
             margin-top: 28px
+        }
+    }
+
+    .back-to-top {
+        width: 70px;
+        height: 70px;
+        background-color: $color-orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        border: 0;
+        outline: none;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1;
+        opacity: 1;
+        cursor: pointer;
+        transition: bottom 0.15s ease-in-out,
+                    right 0.3s ease-in-out,
+                    opacity 0.3s ease-in-out;
+
+        @include max-screen($breakpoint-mobile) {
+            width: 50px;
+            height: 50px;
+        }
+
+        &:hover {
+            bottom: 25px;
+            opacity: 0.6;
+        }
+
+        &:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border: 2px solid $color-white;
+            position: relative;
+            transform: rotate(45deg);
+            border-bottom: 0;
+            border-right: 0;
+
+            @include max-screen($breakpoint-mobile) {
+                width: 12px;
+                height: 12px;
+            }
         }
     }
 }

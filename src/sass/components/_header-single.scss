@@ -2,6 +2,12 @@
     background-color: $color-primary;
     padding: 19.5px 0;
 
+    h1 {
+        @include max-screen($breakpoint-mobile) {
+            font-size: 18px;
+        }
+    }
+
     .breadcrumb a {
         color: $color-white;
 

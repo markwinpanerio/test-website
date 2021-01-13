@@ -62,7 +62,63 @@
         }
     }
 
-    .header-search {
-        
+    button {
+        outline: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] {
+        .navbar-toggler-icon {
+            span {
+                left: 5px;
+            }
+
+            span:first-child {
+                transform: rotate(45deg);
+                top: -2px;
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .navbar-toggler-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 30px;
+        height: 20px;
+
+        span {
+            width: 100%;
+            height: 2px;
+            background-color: $color-black;
+            position: relative;
+            left: 0;
+            opacity: 1;
+            transition: transform 0.3s ease-in-out,
+                        left 0.3s ease-in-out,
+                        opacity 0.3s ease-in-out,
+                        top 0.3s ease-in-out;
+
+            &:first-child {
+                position: relative;
+                transform-origin: top left;
+                transform: rotate(0);
+                top: 0;
+            }
+
+            &:last-child {
+                position: relative;
+                transform-origin: bottom left;
+                transform: rotate(0);
+            }
+        }
     }
 }

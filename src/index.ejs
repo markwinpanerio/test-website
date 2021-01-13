@@ -227,33 +227,32 @@
 			}) %>
 			<div class="row classic-section-container-md">
 				<div class="col-lg-3">
-					<div class="card-with-avatar">
-						<div class="card-with-avatar-image">
-							<img src="https://via.placeholder.com/270x280/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="card-with-avatar-content">
-							<h3 class="h5 font-weight-bold">Robert Judd</h3>
-							<p>CEO</p>
-							<hr>
-							<ul class="card-with-avatar-social">
-								<li>
-									<a href="#">
-										<i class="fa fa-facebook-official"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fa fa-linkedin-square"></i>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+					<%- include('./web-elements/modules/card-with-avatar', {
+						image: 'https://via.placeholder.com/270x280/b1abb6/b1abb6',
+						name: 'Robert Judd',
+						position: 'CEO' 
+					}) %>
+				</div>
+				<div class="col-lg-3">
+					<%- include('./web-elements/modules/card-with-avatar', {
+						image: 'https://via.placeholder.com/270x280/b1abb6/b1abb6',
+						name: 'Eva Barnes',
+						position: 'DESIGNER' 
+					}) %>
+				</div>
+				<div class="col-lg-3">
+					<%- include('./web-elements/modules/card-with-avatar', {
+						image: 'https://via.placeholder.com/270x280/b1abb6/b1abb6',
+						name: 'Eugene Fletcher',
+						position: 'DEVELOPER' 
+					}) %>
+				</div>
+				<div class="col-lg-3">
+					<%- include('./web-elements/modules/card-with-avatar', {
+						image: 'https://via.placeholder.com/270x280/b1abb6/b1abb6',
+						name: 'Janet McKenzie',
+						position: 'SUPPORT' 
+					}) %>
 				</div>
 			</div>
 		</div>
@@ -300,14 +299,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="text-center cta-buy">
-		<div class="l-container">
-			<div class="row align-items-center justify-content-center">
-				<h2 class="h3">Like what you see? Buy this template!</h2>
-				<button type="button" class="btn btn-outline-secondary btn-lg">TAKE MY MONEY</button>
-			</div>
-		</div>
-	</section>
+	<%- include('./web-elements/modules/cta-buy', {
+		title: 'Like what you see? Buy this template!',
+		buttonText: 'TAKE MY MONEY'
+	}) %>
 	<section class="cta-subscription text-center">
 		<div class="l-container">
 			<div class="row align-items-center">
