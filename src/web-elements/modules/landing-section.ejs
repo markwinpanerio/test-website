@@ -1,0 +1,17 @@
+<section class="landing-section">
+    <div class="l-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <figure class="figure">
+                    <img src="<%= img %>" alt="" width="100%">
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="h5 font-weight-bold"><%= title %></h2>
+                <% for (var i = 0; i < desription.length ; i++) { %>
+                    <p><%= desription[i] %></p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>

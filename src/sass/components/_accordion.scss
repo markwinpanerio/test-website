@@ -1,0 +1,74 @@
+.override-bootstrap .accordion {
+    
+    .card {
+        border-radius: 0;
+        border: 0;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+
+    .card-header {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+    }
+
+    .card-body {
+        padding: 0 0 5px 26px;
+        line-height: 1.6;
+    }
+
+    .card-content {
+        position: relative;
+        top: -10px;
+    }
+
+    .btn-link {
+        color: $color-black;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0;
+        width: 100%;
+        padding: 12px 20px 12px 23px;
+        position: relative;
+        text-align: left;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background-color: $color-orange;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        &:before {
+            width: 13px;
+            height: 3px;
+        }
+
+        &:after {
+            height: 13px;
+            width: 3px;
+            left: 5px;
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        &.collapsed {
+            &:after {
+                transform: translateY(-50%) rotate(0);
+            }
+        }
+    }
+}

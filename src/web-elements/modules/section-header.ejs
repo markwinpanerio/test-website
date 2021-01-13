@@ -1,0 +1,16 @@
+<%  
+    var alignmentModifier;
+
+    if(typeof modifier == 'undefined') {
+        alignmentModifier = 'text-center';
+    } else {
+        alignmentModifier = modifier;
+    }
+%>
+<div class="section-header <%= alignmentModifier %>">
+    <em><%= upperText %></em>
+    <h2 class="h1"><%= title %></h2>
+    <% if(typeof subTitle !== 'undefined') { %>
+    <h3 class="h5"><%= subTitle %></h3>
+    <% } %>
+</div>

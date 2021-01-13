@@ -1,0 +1,23 @@
+.client {
+    &-content {
+        .section-header {
+            padding: 0;
+        }
+
+        p {
+            margin-top: 17px;
+        }
+    }
+    
+    &-group {
+        margin-top: 29px;
+    }
+
+    &-group-item {
+        margin-bottom: 29px;
+    
+        img {
+            width: 100%;
+        }
+    }
+}

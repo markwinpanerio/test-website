@@ -1,0 +1,23 @@
+.card-with-icon {
+    &-icon {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: $color-white;
+        background-color: $color-icon;
+        margin-top: 3px;
+        margin-right: 19px;
+
+        .fa {
+            font-size: 16px;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+}

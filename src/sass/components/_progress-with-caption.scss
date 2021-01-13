@@ -1,0 +1,25 @@
+.progress-with-caption {
+    margin-top: 17px;
+
+    li:not(:last-child) {
+        margin-bottom: 27px;
+    }
+
+    h3 {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+        font-size: 13px;
+        position: relative;
+        top: -2px;
+        right: -3px;
+    }
+
+    .progress {
+        margin-top: 7px;
+    }
+}

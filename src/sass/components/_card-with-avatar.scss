@@ -1,0 +1,43 @@
+.card-with-avatar {
+ 
+    &-social {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+
+        li:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        a {
+            color: $color-social;
+            font-size: 20px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-content {
+        padding-top: 14px;
+
+        h3 {
+            margin: 2px 0px 5px;
+            font-size: 18px;
+        }
+        
+        p {
+            margin-bottom: 0;
+        }
+
+        hr {
+            margin: 13px 0 8px;
+        }
+    }
+}

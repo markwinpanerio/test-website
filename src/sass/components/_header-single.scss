@@ -1,0 +1,32 @@
+.header-single {
+    background-color: $color-primary;
+    padding: 19.5px 0;
+
+    .breadcrumb a {
+        color: $color-white;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+        padding: .75rem 0;
+    }
+
+    .breadcrumb-item.active {
+        opacity: 0.6;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        padding: 12.5px 5px 12.5px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

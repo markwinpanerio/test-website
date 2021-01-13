@@ -3,10 +3,10 @@
 <head>
 	<%- include('./web-elements/modules/header', {pageTitle: 'Test Website'}) %>
 </head>
-<body class="override-bootstrap">
+<body>
 <%- include('./web-elements/layout/l-header') %>
 
-<main class="l-about-us">
+<main class="l-about-us override-bootstrap">
 	<%- include('./web-elements/modules/landing-section', {
 		img: 'https://via.placeholder.com/1200x700/b1abb6/b1abb6',
 		title: 'Welcome to our company',
@@ -15,50 +15,50 @@
 			'Ut dictum justo ut rutrum pellentesque. In vestibulum vel mi vel convallis. Integer semper consectetur erat et vestibulum. Vestibulum vulputate metus ac purus faucibus, at rhoncus enim eleifend. Vestibulum purus quam, tempus sit amet quam ac, hendrerit porttitor metus. Curabitur fermentum pellentesque adipiscing. Donec lobortis elementum orci. Donec et venenatis.'
 		]
 	}) %>
-	<section class="classic-section bg-light">
+	<section class="classic-section bg-light py-5">
 		<div class="l-container">
 			<%- include('./web-elements/modules/section-header', {
 				upperText: 'OUR SERVICES',
 				title: 'What can we do for you?',
 				subTitle: 'Mauris eget ligula vel nulla dignissim pharetra non sed orci. Praesent consequat egestas dapibus. Quisque faucibus erat at metus adipiscing lacinia.'
 			}) %>
-			<div class="row classic-section-content">
-				<div class="classic-section-content-item col-lg-4">
+			<div class="row mt-5">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-star',
 						title: 'Brand creation',
 						description: 'Praesent dignissim dui eu urna feugiat lobortis. Morbi varius nibh sit amet adipiscing mollis. Aenean id neque ut augue gravida posuere.'
 					}) %>
 				</div>
-				<div class="classic-section-content-item col-lg-4">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-asterisk',
 						title: 'Interface design',
 						description: 'Donec sed dui consectetur, condimentum tellus nec, lacinia felis. Aenean vehicula erat a justo lobortis, non euismod orci vulputate.'
 					}) %>
 				</div>
-				<div class="classic-section-content-item col-lg-4">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-trophy',
 						title: 'Graphic design',
 						description: 'Nam pharetra justo turpis, quis rutrum lorem lobortis euismod. Praesent augue, consectetur ultricies eros non, lacinia scelerisque ante.'
 					}) %>
 				</div>
-				<div class="classic-section-content-item col-lg-4">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-cog',
 						title: 'Web development',
 						description: 'Aenean vitae neque mi. Phasellus tempor risus non risus tristique, quis egestas velit vulputate. Sed porttitor non nunc non pharetra.'
 					}) %>
 				</div>
-				<div class="classic-section-content-item col-lg-4">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-thumbs-up',
 						title: 'Online marketing',
 						description: 'Duis quis elit hendrerit, tempor magna ac, adipiscing ligula. Maecenas neque nibh, vehicula ut neque at, scelerisque mollis enim.'
 					}) %>
 				</div>
-				<div class="classic-section-content-item col-lg-4">
+				<div class="col-lg-4">
 					<%- include('./web-elements/modules/card-with-icon', {
 						icon: 'fa-file-text',
 						title: 'Information visualization',
@@ -68,63 +68,62 @@
 			</div>
 		</div>
 	</section>
-	<section class="classic-section bg-white">
+	<section class="classic-section bg-light py-5">
 		<div class="l-container">
 			<%- include('./web-elements/modules/section-header', {
 				upperText: 'OUR CAPABILITIES',
 				title: 'Things we are good at'
 			}) %>
-			<div class="row classic-section-container-sm">
+			<div class="row">
 				<div class="col-lg-6">
-					<div id="accordion" class="accordion">
+					<div id="accordion">
 						<div class="card">
-							<div class="card-header" id="js-heading-1">
-								<h5 class="mb-0">
-									<button class="btn btn-link" data-toggle="collapse" data-target="#js-accordion-1" aria-expanded="true" aria-controls="js-accordion-1">
-										Problems solving
-									</button>
-								</h5>
-							</div>
+						  <div class="card-header" id="headingOne">
+							<h5 class="mb-0">
+							  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Collapsible Group Item #1
+							  </button>
+							</h5>
+						  </div>
 					  
-							<div id="js-accordion-1" class="collapse show card-content" aria-labelledby="js-heading-1" data-parent="#accordion">
-								<div class="card-body">
-									Maecenas placerat arcu purus. Aliquam eget pulvinar purus, vel vehicula lorem. In eu tortor lectus. Phasellus non lacus nec mauris gravida viverra ut id est. Morbi vel urna in mauris interdum dapibus at sodales velit.								
-								</div>
+						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
+						  </div>
 						</div>
 						<div class="card">
-							<div class="card-header" id="js-heading-2">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#js-accordion-2" aria-expanded="true" aria-controls="js-accordion-2">
-										Systems monitoring
-									</button>
-								</h5>
+						  <div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+							  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Collapsible Group Item #2
+							  </button>
+							</h5>
+						  </div>
+						  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
-					  
-							<div id="js-accordion-2" class="collapse card-content" aria-labelledby="js-heading-2" data-parent="#accordion">
-								<div class="card-body">
-									Maecenas placerat arcu purus. Aliquam eget pulvinar purus, vel vehicula lorem. In eu tortor lectus. Phasellus non lacus nec mauris gravida viverra ut id est. Morbi vel urna in mauris interdum dapibus at sodales velit.								
-								</div>
-							</div>
+						  </div>
 						</div>
 						<div class="card">
-							<div class="card-header " id="js-heading-3">
-								<h5 class="mb-0">
-									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#js-accordion-3" aria-expanded="true" aria-controls="js-accordion-3">
-										Affect management
-									</button>
-								</h5>
+						  <div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+							  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Collapsible Group Item #3
+							  </button>
+							</h5>
+						  </div>
+						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+							  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 							</div>
-							<div id="js-accordion-3" class="collapse card-content" aria-labelledby="js-heading-3" data-parent="#accordion">
-								<div class="card-body">
-									Maecenas placerat arcu purus. Aliquam eget pulvinar purus, vel vehicula lorem. In eu tortor lectus. Phasellus non lacus nec mauris gravida viverra ut id est. Morbi vel urna in mauris interdum dapibus at sodales velit.								
-								</div>
-							</div>
+						  </div>
 						</div>
-					</div>
+					  </div>
 				</div>
 				<div class="col-lg-6">
-					<ul class="progress-with-caption">
+					<ul>
 						<li>
 							<div class="row justify-content-between">
 								<div class="col-lg-6">
@@ -135,46 +134,7 @@
 								</div>
 							</div>
 							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 96%" aria-valuenow="96%" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</li>
-						<li>
-							<div class="row justify-content-between">
-								<div class="col-lg-6">
-									<h3 class="h6 text-uppercase">Illustrator</h3>
-								</div>
-								<div class="col-lg-6 text-right">
-									<p>Very good</p>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</li>
-						<li>
-							<div class="row justify-content-between">
-								<div class="col-lg-6">
-									<h3 class="h6 text-uppercase">InDesign</h3>
-								</div>
-								<div class="col-lg-6 text-right">
-									<p>Good</p>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50%" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</li>
-						<li>
-							<div class="row justify-content-between">
-								<div class="col-lg-6">
-									<h3 class="h6 text-uppercase">After Effects</h3>
-								</div>
-								<div class="col-lg-6 text-right">
-									<p>Average</p>
-								</div>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40%" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
 						</li>
 					</ul>
@@ -219,13 +179,13 @@
 			</a>
 		</div>
 	</section>
-	<section class="classic-section bg-white">
+	<section class="classic-section bg-light py-5">
 		<div class="l-container">
 			<%- include('./web-elements/modules/section-header', {
 				upperText: 'OUR TEAM',
 				title: 'The right people'
 			}) %>
-			<div class="row classic-section-container-md">
+			<div class="row">
 				<div class="col-lg-3">
 					<div class="card-with-avatar">
 						<div class="card-with-avatar-image">
@@ -258,94 +218,22 @@
 			</div>
 		</div>
 	</section>
-	<section class="classic-section client bg-light">
+	<section class="classic-section bg-light py-5">
 		<div class="l-container">
-			<div class="row client">
-				<div class="col-lg-3 client-content">
+			<div class="row">
+				<div class="col-lg-3">
 					<%- include('./web-elements/modules/section-header', {
 						upperText: 'OUR CLIENTS',
 						title: 'Meet our happy customers',
-						modifier: 'text-left'
+						modifier: 'text-right'
 					}) %>
 					<p>Pellentesque varius ipsum sed odio tristique lacinia. Mauris vel felis at mauris sollicitudin condimentum.</p>
 				</div>
 				<div class="col-lg-9">
-					<div class="row client-group">
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-						<div class="client-group-item col-lg-3">
-							<img src="https://via.placeholder.com/195x90/b1abb6/b1abb6" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="text-center cta-buy">
-		<div class="l-container">
-			<div class="row align-items-center justify-content-center">
-				<h2 class="h3">Like what you see? Buy this template!</h2>
-				<button type="button" class="btn btn-outline-secondary btn-lg">TAKE MY MONEY</button>
-			</div>
-		</div>
-	</section>
-	<section class="cta-subscription text-center">
-		<div class="l-container">
-			<div class="row align-items-center">
-				<div class="col-lg-6 cta-subscription-sns">
-					<div class="row align-items-center">
-						<p>FOLLOW US</p>
-						<ul class="row social-list m-0">
-							<li>
-								<a href="#" class="social-link social-link-circle">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="social-link social-link-circle">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="social-link social-link-circle">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#" class="social-link social-link-circle">
-									<i class="fa fa-pinterest"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-6 cta-subscription-form">
-					<div class="row align-items-center">
-						<p>GET THE NEWSLETTER</p>
-						<form class="form-inline">
-							<input class="form-control form-control-outline" type="email" placeholder="Your email address">
-							<button class="btn btn-sm btn-orange" type="submit">SUBSCRIBE</button>
-						</form>
-					</div>
+					<%- include('./web-elements/modules/section-header', {
+						upperText: 'OUR TEAM',
+						title: 'The right people'
+					}) %>
 				</div>
 			</div>
 		</div>

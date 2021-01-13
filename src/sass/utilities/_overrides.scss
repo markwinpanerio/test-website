@@ -1,0 +1,149 @@
+//general override
+.override-bootstrap {
+    p {
+        font-size: 14px;
+        color: $color-text;
+        letter-spacing: 0;
+        line-height: 1.6;
+
+        &:not(:last-of-type) {
+            margin-bottom: 8px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .progress {
+        height: 2px;
+    }
+
+    .progress-bar {
+        background-color: $color-primary;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+
+    .btn-lg {
+        padding: 15px 30px;
+    }
+
+    .btn-sm {
+        padding: 8px 19px;
+    }
+
+    .form-control-outline {
+        background-color: transparent;
+        border: 1px solid rgba($color-white, 0.4);
+        color: rgba($color-white, 0.4);
+        min-width: 255px;
+        margin-right: 8px;
+        font-size: 13px;
+        padding: 9px 8px;
+        letter-spacing: 0;
+    }
+}
+
+//adding modifiers to override existing styled elements
+.carousel-adjust-by-content{
+    .carousel-item {
+        padding: 89px 0 146px;
+        background: {
+            size: cover;
+            position: center;
+        }
+    }
+
+    .carousel-caption {
+        position: relative;
+        bottom: initial;
+        left: 0;
+        right: 0;
+        padding: 0 30px;
+        max-width: 770px + 60px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.4;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            margin-top: 19px;
+            font-weight: 700;
+        }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        left: 11.5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon { 
+        background-image: none;
+        border: 2px solid $color-white;
+        position: relative;
+        transform: rotate(45deg);
+        width: 15px;
+        height: 15px;
+    }
+
+    .carousel-control-prev-icon {
+        border-top: 0;
+        border-right: 0;
+    }
+
+    .carousel-control-next-icon {
+        border-bottom: 0;
+        border-left: 0;
+    }
+}
+
+.carousel-indicator-circle  {
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid $color-white;
+    }
+
+    .carousel-indicators .active {
+        background-color: $color-white;
+    }
+}
+
+//adding parent element override child elements
+.footer {
+    .navbar-brand {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        padding: 2px 0;
+    }
+}
+
+.btn {
+    &-orange {
+        background-color: $color-orange;
+        color: $color-white;
+    }
+}

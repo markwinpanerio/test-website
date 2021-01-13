@@ -1,0 +1,39 @@
+.cta-buy {
+    padding: 48px 0;
+    
+    h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        margin-left: 49px;
+    }
+}
+
+.cta-subscription {
+    padding: 20px 0;
+    background-color: $color-primary;
+
+    &-sns {
+        padding-left: 31px;
+    }
+
+    p {
+        letter-spacing: 0.05em;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    &-form {
+        padding-left: 31px;
+
+        .form-line {
+            margin-left: 31px;
+        }
+
+        .form-control {
+            margin-right: 8px;
+        }
+    }
+}

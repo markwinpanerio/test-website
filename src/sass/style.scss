@@ -1,3 +1,19 @@
 @import './setting';
+@import './utilities/media-queries';
+@import './utilities/overrides';
+
 @import './base/base';
-@import './base/reset';
+
+@import './layout/l-container';
+
+@import './components/accordion';
+@import './components/card-with-avatar';
+@import './components/card-with-icon';
+@import './components/client';
+@import './components/cta';
+@import './components/footer';
+@import './components/header-single';
+@import './components/header';
+@import './components/progress-with-caption';
+@import './components/section';
+@import './components/social';
