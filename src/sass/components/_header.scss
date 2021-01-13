@@ -1,6 +1,6 @@
 .header {
     .navbar {
-        padding: 17px 0;
+        padding: 19px 0;
     }
     
     .header-search {
@@ -58,13 +58,13 @@
 
     .nav-item {
         .nav-link {
-            padding: 10px 0;
+            padding: 6px 0;
         }
     }
     
     .nav-item:not(:last-child) {
         @include min-screen($breakpoint-mobile) {
-            margin-right: 15px;
+            margin-right: 30px;
         }
     }
 
