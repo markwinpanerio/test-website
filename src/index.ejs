@@ -3,7 +3,13 @@
 <head>
 	<%- include('./web-elements/modules/header', {pageTitle: 'Test Website'}) %>
 </head>
-<body class="override-bootstrap">
+<body class="override-bootstrap animation">
+<div class="mask">
+	<div class="mask-logo">
+		<img src="./images/logo.png" width="40" height="40" class="d-inline-block align-middle" alt="">
+		<span>PLUTO</span>
+	</div>
+</div>
 <%- include('./web-elements/layout/l-header') %>
 
 <main class="l-about-us">

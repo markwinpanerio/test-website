@@ -12,12 +12,18 @@
 <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="override-bootstrap">
+<body class="override-bootstrap animation">
+<div class="mask">
+	<div class="mask-logo">
+		<img src="./images/logo.png" width="40" height="40" class="d-inline-block align-middle" alt="">
+		<span>PLUTO</span>
+	</div>
+</div>
 <header class="header">
 	<div class="l-container">
 		<nav class="navbar navbar-expand-lg">
 			<nav class="navbar navbar-light p-0">
-				<a class="navbar-brand" href="#">
+				<a class="navbar-brand js-header-item" href="#">
 					<img src="./images/logo.png" width="40" height="40" class="d-inline-block align-middle" alt="">
 					Pluto
 				</a>
@@ -31,13 +37,13 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto align-items-lg-center">
-					<li class="nav-item active">
+					<li class="nav-item active js-header-item">
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item js-header-item">
 						<a class="nav-link" href="#">About</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown js-header-item">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Adventure</a>
@@ -45,13 +51,13 @@
 							<a class="dropdown-item" href="#">Technology</a>
 						</div>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item js-header-item">
 						<a class="nav-link" href="#">Blog</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item js-header-item">
 						<a class="nav-link" href="#">Contact</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item js-header-item">
 						<form class="form-inline">
 							<button class="btn btn-outline-dark my-2 my-sm-0 border-0 header-search" type="submit">
 								<i class="fa fa-search"></i>
@@ -66,10 +72,10 @@
 <div class="header-single">
 	<div class="l-container">
 		<div class="row justify-content-between">
-			<div class="col-6 align-self-center">
+			<div class="col-6 align-self-center js-header-single-item">
 				<h1 class="h2 text-white m-0">About us</h1>
 			</div>
-			<div class="col-6 align-self-center">
+			<div class="col-6 align-self-center js-header-single-item">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb bg-transparent m-0 justify-content-end align-items-center">
 						<li class="breadcrumb-item">
@@ -88,16 +94,16 @@
     <div class="l-container">
         <div class="row">
             <div class="col-lg-6">
-                <figure class="figure">
+                <figure class="figure js-landing-item">
                     <img src="https://via.placeholder.com/1200x700/b1abb6/b1abb6" alt="" width="100%">
                 </figure>
             </div>
-            <div class="col-lg-6">
-                <h2 class="h5 font-weight-bold">Welcome to our company</h2>
+            <div class="col-lg-6 js-landing-item">
+                <h2 class="h5 font-weight-bold js-landing-item">Welcome to our company</h2>
                 
-                    <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Mauris interdum erat eget quam mattis, suscipit fermentum sem ultrices. Quisque commodo quam sit amet velit porta molestie. Morbi sodales, massa at rutrum pharetra, lectus lorem rutrum velit, quis lobortis enim lacus eu eros. Vivamus suscipit eget nunc id interdum. </p>
+                    <p class="js-landing-item">Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Mauris interdum erat eget quam mattis, suscipit fermentum sem ultrices. Quisque commodo quam sit amet velit porta molestie. Morbi sodales, massa at rutrum pharetra, lectus lorem rutrum velit, quis lobortis enim lacus eu eros. Vivamus suscipit eget nunc id interdum. </p>
                 
-                    <p>Ut dictum justo ut rutrum pellentesque. In vestibulum vel mi vel convallis. Integer semper consectetur erat et vestibulum. Vestibulum vulputate metus ac purus faucibus, at rhoncus enim eleifend. Vestibulum purus quam, tempus sit amet quam ac, hendrerit porttitor metus. Curabitur fermentum pellentesque adipiscing. Donec lobortis elementum orci. Donec et venenatis.</p>
+                    <p class="js-landing-item">Ut dictum justo ut rutrum pellentesque. In vestibulum vel mi vel convallis. Integer semper consectetur erat et vestibulum. Vestibulum vulputate metus ac purus faucibus, at rhoncus enim eleifend. Vestibulum purus quam, tempus sit amet quam ac, hendrerit porttitor metus. Curabitur fermentum pellentesque adipiscing. Donec lobortis elementum orci. Donec et venenatis.</p>
                 
             </div>
         </div>
@@ -107,10 +113,10 @@
 		<div class="l-container">
 			
 <div class="section-header text-center">
-    <em>OUR SERVICES</em>
-    <h2 class="h1">What can we do for you?</h2>
+    <em class="js-section-header-item">OUR SERVICES</em>
+    <h2 class="h1 js-section-header-item">What can we do for you?</h2>
     
-    <h3 class="h5">Mauris eget ligula vel nulla dignissim pharetra non sed orci. Praesent consequat egestas dapibus. Quisque faucibus erat at metus adipiscing lacinia.</h3>
+    <h3 class="h5 js-section-header-item">Mauris eget ligula vel nulla dignissim pharetra non sed orci. Praesent consequat egestas dapibus. Quisque faucibus erat at metus adipiscing lacinia.</h3>
     
 </div>
 			<div class="row classic-section-content">
@@ -187,8 +193,8 @@
 		<div class="l-container">
 			
 <div class="section-header text-center">
-    <em>OUR CAPABILITIES</em>
-    <h2 class="h1">Things we are good at</h2>
+    <em class="js-section-header-item">OUR CAPABILITIES</em>
+    <h2 class="h1 js-section-header-item">Things we are good at</h2>
     
 </div>
 			<div class="row classic-section-container-sm">
@@ -340,8 +346,8 @@
 		<div class="l-container">
 			
 <div class="section-header text-center">
-    <em>OUR TEAM</em>
-    <h2 class="h1">The right people</h2>
+    <em class="js-section-header-item">OUR TEAM</em>
+    <h2 class="h1 js-section-header-item">The right people</h2>
     
 </div>
 			<div class="row classic-section-container-md">
@@ -470,8 +476,8 @@
 				<div class="col-lg-3 client-content">
 					
 <div class="section-header text-left">
-    <em>OUR CLIENTS</em>
-    <h2 class="h1">Meet our happy customers</h2>
+    <em class="js-section-header-item">OUR CLIENTS</em>
+    <h2 class="h1 js-section-header-item">Meet our happy customers</h2>
     
 </div>
 					<p>Pellentesque varius ipsum sed odio tristique lacinia. Mauris vel felis at mauris sollicitudin condimentum.</p>
@@ -617,6 +623,9 @@
     </button>
 </footer>
 <script src="./lib/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="./js/main.js"></script>

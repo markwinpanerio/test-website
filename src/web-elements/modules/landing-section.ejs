@@ -2,14 +2,14 @@
     <div class="l-container">
         <div class="row">
             <div class="col-lg-6">
-                <figure class="figure">
+                <figure class="figure js-landing-item">
                     <img src="<%= img %>" alt="" width="100%">
                 </figure>
             </div>
-            <div class="col-lg-6">
-                <h2 class="h5 font-weight-bold"><%= title %></h2>
+            <div class="col-lg-6 js-landing-item">
+                <h2 class="h5 font-weight-bold js-landing-item"><%= title %></h2>
                 <% for (var i = 0; i < desription.length ; i++) { %>
-                    <p><%= desription[i] %></p>
+                    <p class="js-landing-item"><%= desription[i] %></p>
                 <% } %>
             </div>
         </div>
