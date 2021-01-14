@@ -2,4 +2,9 @@
 
 Tools useed;
 
+Gulp
+SCSS
+GSAP
+ScrollMagic
+EJS
 Bootstrap
